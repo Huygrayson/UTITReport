@@ -1,0 +1,106 @@
+.navStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    height: var(--navbar-height);
+    background-color: #abdbe3;
+}
+
+#logoImg {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    height: auto;
+    pointer-events: none;
+}
+
+#settingsIconLeft {
+    position: relative;
+    right: 100px
+}
+
+#settingsIconLeft:hover {
+    cursor: pointer;
+    animation: rotateRight 2s infinite;
+}
+
+#checkBoxLeft {
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    right: 140px;
+    opacity: 0%;
+}
+
+#checkBoxLeft:checked ~ #settingsIconLeft {
+    animation: moveRight 2s;
+}
+
+#settingsIconRight {
+    position: relative;
+}
+
+#settingsIconRight:hover {
+    cursor: pointer;
+    animation: rotateLeft 2s infinite;
+}
+
+#checkBoxRight {
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    right: 15px
+}
+
+#checkBoxRight:checked ~ #settingsIconRight {
+    animation: moveLeft 2s;
+}
+
+
+@keyframes moveLeft {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(-124px);
+    }
+}
+
+@keyframes rotateLeft {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes moveRight {
+    from {
+      transform: translateX(0px) ;
+    }
+    to {
+      transform: translateX(124px);
+    }
+}
+
+@keyframes rotateRight {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.settingsPane {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: end;
+    background-color: antiquewhite;
+}
