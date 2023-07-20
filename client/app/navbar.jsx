@@ -22,31 +22,34 @@ export default function Navbar(){
 
     return(
         <>
-            <Media>
+            {/* <Media query="(min-width: 850px)">
             {
-                
+                matches => { */}
+                    <div>
+                        <div className={styles.navStyle}>
+                            <nav>
+                                <button>
+                                    {settings? 
+                                    <SettingsIcon 
+                                        id={styles.settingsIconLeft}
+                                        onClick={handleViewSettings}
+                                    />: 
+                                    <SettingsIcon 
+                                        id={styles.settingsIconRight}
+                                        onClick={handleViewSettings}
+                                    />}
+                                </button>
+                                {settings? <Settings />: <></>}                           
+                            </nav>
+                        </div>
+                    
+                        <div>
+                            <img src="/logo/logo.svg" id={styles.logoImg} alt="Logo" />
+                        </div>
+                    </div>
+                {/* }
             }    
-            </Media>
-            <div className={styles.navStyle}>
-                <nav>
-                    <label htmlFor={styles.checkBoxLeft}></label>
-                    <input type="checkbox" id={styles.checkBoxLeft} />
-                    <SettingsIcon 
-                        id={styles.settingsIconLeft}
-                        onClick={handleViewSettings}
-                    />
-                    <label htmlFor={styles.checkBoxRight}></label>
-                    <input type="checkbox" id={styles.checkBoxRight} />
-                    <SettingsIcon 
-                        id={styles.settingsIconRight}
-                        onClick={handleViewSettings}
-                    />
-                </nav>
-            </div>
-            {settings? <Settings />: <></>}
-            <div>
-                <img src="/logo/logo.svg" id={styles.logoImg} alt="Logo" />
-            </div>
+            </Media> */}
         </>
     )
 }
