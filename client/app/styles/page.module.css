@@ -20,6 +20,7 @@
 }
 
 .btnLoad:hover {
+  color: black;
   background-color: #abdbe3;
   box-shadow: 2px 2px 2px black;
 }
@@ -30,6 +31,7 @@
 }
 
 .btnNew:hover {
+  color: black;
   background-color: #abdbe3;
   box-shadow: 2px 2px 2px black;
 }

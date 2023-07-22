@@ -21,8 +21,9 @@
 #settingsBtnLeft {
   position: relative;
   z-index: 3;
-  right: 112px;
+  right: 110px;
   border-radius: 100%;
+  border-style: hidden;
   background-color: #abdbe3;
 }
 
@@ -34,6 +35,7 @@
 #settingsBtnRight {
   position: relative;
   border-radius: 100%;
+  border-style: hidden;
   background-color: #abdbe3;
 }
 
@@ -82,23 +84,24 @@
   position: absolute;
   z-index: 2;
   right: 0px;
-  top: 15px;
+  top: 0px;
   display: flex;
   align-items: flex-end;
   width: 150px;
-  height: 150px;
+  height: 160px;
   border-style: solid;
   border-width: 1px;
   border-color: #112E33;
-  border-top-left-radius: 13.5%;
+  /* border-top-left-radius: 13.5%; */
   background-color: #abdbe3; /* 2 last hex numbers are for opacity */
   box-shadow: -3px 3px 3px black;
 }
 
 .settingsContent {
   padding-top: 10px;
+  padding-left: 5px;
   background-color: white;
   width: 150px;
-  height: 105px;
+  height: 100px;
   text-align: start;
 }

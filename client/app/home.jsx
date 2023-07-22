@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      {newProject? <NewProject newProject={newProject}/>: <></>}
+      {newProject? <NewProject viewNewProject={viewNewProject}/>: <></>}
       <main className={styles.main}>
         <div>
           <img src="/img/undraw_programming_re_kg9v.svg" id={styles.programmerImg} alt="Programmer" />

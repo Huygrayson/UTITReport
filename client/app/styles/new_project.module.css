@@ -1,5 +1,5 @@
 /* Modal Content/Box */
-.modalContent {
+.modalStyle {
     background-color: #fefefe;
     margin: 10% auto; /* 15% from the top and centered */
     border: 2px solid;
@@ -36,4 +36,50 @@
     flex-direction: column;
     align-items: center;
 }
-  
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.configAreaRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.configAreaRow div {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.configAreaCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generalConfig {
+    text-align: start;
+}
+
+.localConfig {
+    text-align: start;
+}
+
+.gitlabConfig {
+    text-align: start;
+}
+
+.jiraConfig {
+    text-align: start;
+}
+
+.btnCreate:hover {
+    color: black;
+    background-color: #abdbe3;
+    box-shadow: 2px 2px 2px black;
+}
