@@ -1,5 +1,23 @@
 #copyRight {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logoRVC {
+    width: 100px;
+    height: auto;
+    pointer-events: none;
+}
+
+.logoBV {
+    width: 100px;
+    height: auto;
+    pointer-events: none;
+    padding-bottom: 10px;
+}
+
+.copyRightText {
+    font-size: 0.8rem;
 }

@@ -24,7 +24,7 @@ export default function NewProject(props){
                         <h4>Create your new project</h4>
                     </div>
                     <div className="container-fluid modal-body" >
-                        <Media query="(min-width: 850px)">
+                        <Media query="(min-width: 1400px)">
                         {
                             matches =>
                             <form id="formNewProject" className={styles.modalContent} >
@@ -92,6 +92,10 @@ export default function NewProject(props){
                                             <h6><b>--- <u>Local configuration</u> ---</b></h6>
                                         </div>
                                         <div>
+                                            <label htmlFor="specPath">Configuration file path:&nbsp;</label><br/>
+                                            <input type="text" style={{width: "350px", padding: "2px"}} className="form-control" placeholder="Local path of your config.ini"/>
+                                        </div>
+                                        <div>
                                             <label htmlFor="specPath">Test-spec path:&nbsp;</label><br/>
                                             <input type="text" style={{width: "350px", padding: "2px"}} className="form-control" placeholder="Local path of your test-spec"/>
                                         </div>
@@ -113,7 +117,7 @@ export default function NewProject(props){
                                             </div>
                                         </div>
                                         
-                                        <div style={{textAlign: "center"}}>
+                                        <div className={styles.labpcConfig}>
                                             <h6><b>--- <u>LabPC configuration</u> ---</b></h6> 
                                         </div>
                                         <div>

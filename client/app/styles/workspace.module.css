@@ -1,0 +1,20 @@
+#workspace {
+    display: flex;
+}
+
+.filterBtn {
+    position: absolute;
+    z-index: 2;
+    left: 120px;
+    top: 15px;
+}
+
+.optionArea {
+    position: absolute;
+    background-color: #DBE3AB;
+    height: 600px;
+}
+
+.mainArea {
+    height: 600px;
+}

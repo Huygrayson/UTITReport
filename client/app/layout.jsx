@@ -24,7 +24,16 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <div id={styles.copyRight}>
-          <p>© Copyright Huy Vo</p>
+          <div style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
+            <div className={styles.copyRightText}>
+              Powered by:&nbsp;
+            </div>
+            <img src="/logo/RVC.png" className={styles.logoRVC} alt="Logo RVC" />
+            <img src="/logo/banvien.jpg" className={styles.logoBV} alt="Logo Banvien" />
+          </div>
+          <div className={styles.copyRightText}>
+            © Copyright Huy Vo
+          </div>
         </div>
       </body>
     </html>

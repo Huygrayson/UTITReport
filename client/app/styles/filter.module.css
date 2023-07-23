@@ -1,0 +1,83 @@
+.btnFilterRight {
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 35px;
+}
+
+.btnFilterRight:hover {
+    box-shadow: 2px 2px 3px black;
+    animation: shakeRight 0.5s infinite;
+}
+
+.btnFilterLeft {
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 35px;
+}
+
+.btnFilterLeft:hover {
+    box-shadow: 2px 2px 3px black;
+    animation: shakeLeft 0.5s infinite;
+}
+
+.btnFilterDown {
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 35px;
+}
+
+.btnFilterDown:hover {
+    box-shadow: 2px 2px 3px black;
+    animation: shakeDown 0.5s infinite;
+}
+
+.btnFilterUp {
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 35px;
+}
+
+.btnFilterUp:hover {
+    box-shadow: 2px 2px 3px black;
+    animation: shakeUp 0.5s infinite;
+}
+
+@keyframes shakeRight {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes shakeLeft {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-5px);
+    }
+}
+
+@keyframes shakeDown {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes shakeUp {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
