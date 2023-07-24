@@ -153,7 +153,7 @@ export default function NewProject(props){
                                             <input type="text" style={{width: "100px", padding: "0px", borderRadius: "5px", cursor: "no-drop"}} 
                                                 readOnly title="Choose from the table below"/>
                                             <div>
-                                                <table className="table table-hover table-bordered table-sm" cellspacing="0" width="100%">
+                                                <table className="table table-hover table-bordered table-sm" cellSpacing="0" width="100%">
                                                     <thead className="table-dark">
                                                         <tr>
                                                             <th className="th-sm">Pipeline ID</th>

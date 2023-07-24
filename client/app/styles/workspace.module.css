@@ -2,19 +2,22 @@
     display: flex;
 }
 
-.filterBtn {
+.filterArea {
     position: absolute;
     z-index: 2;
     left: 120px;
-    top: 15px;
+    top: 10px;
+    border: 2px solid #00000080;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    padding: 5px;
 }
 
 .optionArea {
     position: absolute;
     background-color: #DBE3AB;
-    height: 600px;
 }
 
 .mainArea {
-    height: 600px;
+    margin-top: 2rem;
 }

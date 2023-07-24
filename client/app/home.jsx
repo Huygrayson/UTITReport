@@ -1,7 +1,6 @@
 "use client"
 import { useState } from 'react';
 import styles from './styles/page.module.css'
-import "bootstrap/dist/css/bootstrap.min.css";
 import NewProject from './new_project';
 import LoadProject from './load_project';
 
