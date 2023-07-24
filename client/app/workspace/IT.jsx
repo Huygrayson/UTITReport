@@ -3,22 +3,21 @@ import styles from '../styles/IT.module.css'
 export default function IT() {
     return(
         <>
-            <div className={styles.generalInfo}>
-                <div>
-                    <label htmlFor="testType"><b>Test type</b></label><br/>
-                    <label htmlFor="module"><b>Module</b></label><br/>
-                    <label htmlFor="device"><b>Device</b></label><br/>
-                    <label htmlFor="OS"><b>OS</b></label>
-                </div>
-                <div>
-                    <b>:</b>&nbsp;IT<br/>
-                    <b>:</b>&nbsp;IMRDRV<br/>
-                    <b>:</b>&nbsp;V3M2<br/>
-                    <b>:</b>&nbsp;Linux-GCC<br/>
-                </div>
-            </div>
-
             <div id={styles.testSummarySheet} style={{overflow: "auto"}}>
+                <div className={styles.generalInfo}>
+                    <div>
+                        <label htmlFor="testType"><b>Test type</b></label><br/>
+                        <label htmlFor="module"><b>Module</b></label><br/>
+                        <label htmlFor="device"><b>Device</b></label><br/>
+                        <label htmlFor="OS"><b>OS</b></label>
+                    </div>
+                    <div>
+                        <b>:</b>&nbsp;IT<br/>
+                        <b>:</b>&nbsp;IMRDRV<br/>
+                        <b>:</b>&nbsp;V3M2<br/>
+                        <b>:</b>&nbsp;Linux-GCC<br/>
+                    </div>
+                </div>
                 <div className={styles.tableTitle}>
                     Test Summary
                 </div>
@@ -165,7 +164,7 @@ export default function IT() {
                             </tr>
                             <tr>
                                 <th className="th-sm">Component</th>
-                                <th className="th-sm">Sheet name</th>
+                                <th className="th-sm">Function</th>
                                 <th className="th-sm">Max(ns)</th>
                                 <th className="th-sm">Average(ns)</th>
                                 <th className="th-sm">Expected max execution time(ns)</th>
@@ -217,22 +216,57 @@ export default function IT() {
                     </table>
                 </div>
 
-                <div className={styles.stackSize}>
-                    <label htmlFor="stackSize">Stack size</label>
+                <div className={styles.memoryUsage}>
+                    <label htmlFor="stackSize">Memory usage</label>
                     <table className="table table-hover table-bordered table-sm" cellSpacing="1" width="100%">
-                        <thead className="table-dark">
+                        <thead>
                             <tr>
-                                <th className="th-sm">Max(ns)</th>
-                                <th className="th-sm">Average(ns)</th>
-                                <th className="th-sm">Expected max execution time(ns)</th>
+                                <th className="th-sm" style={{visibility: "hidden"}}></th>
+                                <th className="th-sm" style={{visibility: "hidden"}}></th>
+                                <th className="th-sm" colSpan={3}>V3H1</th>
+                                <th className="th-sm" colSpan={3}>V3H2</th>
+                                <th className="th-sm" colSpan={3}>V3M2</th>
+                                <th className="th-sm" colSpan={3}>V4H</th>
+                                <th className="th-sm" colSpan={3}>V4H2</th>
+                            </tr>
+                            <tr>
+                                <th className="th-sm">Component</th>
+                                <th className="th-sm">Function</th>
+                                <th className="th-sm">ROM</th>
+                                <th className="th-sm">RAM</th>
+                                <th className="th-sm">Judgement</th>
+                                <th className="th-sm">ROM</th>
+                                <th className="th-sm">RAM</th>
+                                <th className="th-sm">Judgement</th>
+                                <th className="th-sm">ROM</th>
+                                <th className="th-sm">RAM</th>
+                                <th className="th-sm">Judgement</th>
+                                <th className="th-sm">ROM</th>
+                                <th className="th-sm">RAM</th>
+                                <th className="th-sm">Judgement</th>
+                                <th className="th-sm">ROM</th>
+                                <th className="th-sm">RAM</th>
                                 <th className="th-sm">Judgement</th>
                             </tr>
                         </thead>
                         <tbody style={{cursor: "pointer"}}>
                             <tr>
+                                <td>basic_function</td>
+                                <td>R_IMRDRV_Init</td>
                                 <td>16020</td>
                                 <td>434</td>
-                                <td>10,000,000</td>
+                                <td>OK</td>
+                                <td>16020</td>
+                                <td>434</td>
+                                <td>OK</td>
+                                <td>16020</td>
+                                <td>434</td>
+                                <td>OK</td>
+                                <td>16020</td>
+                                <td>434</td>
+                                <td>OK</td>
+                                <td>16020</td>
+                                <td>434</td>
                                 <td>OK</td>
                             </tr>
                         </tbody>
