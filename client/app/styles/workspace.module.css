@@ -25,7 +25,7 @@
 
 .logArea {
     grid-area: log;
-    margin-right: 6px;
+    margin-right: 10px;
 }
 
 .mainArea {

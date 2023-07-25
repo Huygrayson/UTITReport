@@ -1,7 +1,7 @@
 .layout {
     height: 460px;
     border: 1px solid black;
-    overflow: scroll;
+    overflow: auto;
 }
 
 @media (max-width: 800px){
