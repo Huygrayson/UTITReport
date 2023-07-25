@@ -1,0 +1,11 @@
+.layout {
+    height: 460px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+@media (max-width: 800px){
+    .layout {
+        height: 372px;
+    }
+}

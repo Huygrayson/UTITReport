@@ -1,0 +1,31 @@
+.btnRun {
+    background-color: #54C85F;
+    margin-top: 6px;
+    margin-right: 6px;
+    box-shadow: 2px 2px 3px black;
+}
+
+.btnLog {
+    background-color: #E9C32F;
+    margin-top: 6px;
+    margin-right: 6px;
+    box-shadow: 2px 2px 3px black;
+}
+
+.btnReport {
+    background-color: #9782B0;
+    margin-top: 6px;
+    box-shadow: 2px 2px 3px black;
+}
+
+@media (max-width: 800px){
+    .btnRun {
+        width: 28vw;
+    }
+    .btnLog {
+        width: 28vw;
+    }
+    .btnReport {
+        width: 28vw;
+    }
+}

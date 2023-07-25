@@ -53,24 +53,46 @@ export default function NewProject(props){
                                                 <option value="IMPFW">IMPFW</option>
                                             </select>
                                         </div>
-                                        <div>
+                                        <div style={{display: "flex", flexDirection: "row"}}>
                                             <label style={{width: "80px"}} htmlFor="deviceType">Device:&nbsp;</label>
-                                            <select name="deviceType">
+                                            {/* <select name="deviceType">
                                                 <option value="V3M2">V3M2</option>
                                                 <option value="V3H1">V3H1</option>
                                                 <option value="V3H2">V3H2</option>
                                                 <option value="V4H">V4H</option>
                                                 <option value="V4H2">V4H2</option>
-                                            </select>
+                                            </select> */}
+                                            <div style={{paddingTop: "0px"}}>
+                                                <input type="checkbox" id="V3M2" name="V3M2" value="V3M2"/>
+                                                <label for="V3M2">&nbsp;V3M2</label><br/>
+                                                <input type="checkbox" id="V3H1" name="V3H1" value="V3H1"/>
+                                                <label for="V3H1">&nbsp;V3H1</label><br/>
+                                                <input type="checkbox" id="V3H2" name="V3H2" value="V3H2"/>
+                                                <label for="V3H2">&nbsp;V3H2</label><br/>
+                                                <input type="checkbox" id="V4H" name="V4H" value="V4H"/>
+                                                <label for="V4H">&nbsp;V4H</label><br/>
+                                                <input type="checkbox" id="V4H2" name="V4H2" value="V4H2"/>
+                                                <label for="V4H2">&nbsp;V4H2</label>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <label style={{width: "80px"}} htmlFor="OS">OS:&nbsp;</label>
-                                            <select name="OS">
+                                        <div style={{display: "flex", flexDirection: "row"}}>
+                                            <label style={{width: "80px"}} htmlFor="OSType">OS:&nbsp;</label>
+                                            {/* <select name="OSType">
                                                 <option value="Linux-GCC">Linux-GCC</option>
                                                 <option value="Linux-ARM">Linux-ARM</option>
                                                 <option value="Zephyr-ARM">Zephyr-ARM</option>
                                                 <option value="QNX">QNX</option>
-                                            </select>
+                                            </select> */}
+                                            <div style={{paddingTop: "0px"}}>
+                                                <input type="checkbox" id="Linux-GCC" name="Linux-GCC" value="Linux-GCC"/>
+                                                <label for="Linux-GCC">&nbsp;Linux-GCC</label><br/>
+                                                <input type="checkbox" id="Linux-ARM" name="Linux-ARM" value="Linux-ARM"/>
+                                                <label for="Linux-ARM">&nbsp;Linux-ARM</label><br/>
+                                                <input type="checkbox" id="Zephyr-ARM" name="Zephyr-ARM" value="Zephyr-ARM"/>
+                                                <label for="Zephyr-ARM">&nbsp;Zephyr-ARM</label><br/>
+                                                <input type="checkbox" id="QNX" name="QNX" value="QNX"/>
+                                                <label for="QNX">&nbsp;QNX</label>
+                                            </div>
                                         </div>
                                         <div className={styles.jiraConfig}>
                                             <div style={{textAlign: "center"}}>

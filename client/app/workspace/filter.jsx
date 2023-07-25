@@ -1,4 +1,3 @@
-"use client"
 import styles from '../styles/filter.module.css'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -20,31 +19,55 @@ export default function FilterBtn() {
 
     return(
         <>
-            <Media query="(min-width: 650px)">
+            <Media query="(min-width: 900px)">
             {
                 matches =>
                 matches?    
                     (<div>
                         {filter? 
                             (
-                            <div style={{display: "flex", flexDirection: "row"}}>                          
-                                <div style={{marginRight: "5px", marginTop: "8px"}}>
-                                    <select name="components" id="components" style={{width: "300px"}}>
-                                        <option value="default">-- Run a specific component --</option>
-                                        <option value="component 1">component 1</option>
-                                        <option value="component 2">component 2</option>
-                                        <option value="component 3">component 3</option>
-                                    </select>
+                            <div style={{display: "flex", flexDirection: "row"}}>  
+                                <div style={{display: "flex", flexDirection: "row", marginTop: "8px", marginRight: "20px"}}>
+                                    <label htmlFor="device">Device:&nbsp;</label>
+                                    <div style={{paddingTop: "0px"}}>
+                                        <input type="checkbox" id="V3M2" name="V3M2" value="V3M2"/>
+                                        <label for="V3M2">&nbsp;V3M2</label><br/>
+                                        <input type="checkbox" id="V3H1" name="V3H1" value="V3H1"/>
+                                        <label for="V3H1">&nbsp;V3H1</label><br/>
+                                        <input type="checkbox" id="V3H2" name="V3H2" value="V3H2"/>
+                                        <label for="V3H2">&nbsp;V3H2</label><br/>
+                                        <input type="checkbox" id="V4H" name="V4H" value="V4H"/>
+                                        <label for="V4H">&nbsp;V4H</label><br/>
+                                        <input type="checkbox" id="V4H2" name="V4H2" value="V4H2"/>
+                                        <label for="V4H2">&nbsp;V4H2</label>
+                                    </div>
+                                </div>          
+                                <div style={{display: "flex", flexDirection: "row", marginTop: "8px", marginRight: "20px"}}>
+                                    <label htmlFor="OS">OS:&nbsp;</label>
+                                    <div style={{paddingTop: "0px"}}>
+                                        <input type="checkbox" id="Linux-GCC" name="Linux-GCC" value="Linux-GCC"/>
+                                        <label for="Linux-GCC">&nbsp;Linux-GCC</label><br/>
+                                        <input type="checkbox" id="Linux-ARM" name="Linux-ARM" value="Linux-ARM"/>
+                                        <label for="Linux-ARM">&nbsp;Linux-ARM</label><br/>
+                                        <input type="checkbox" id="Zephyr-ARM" name="Zephyr-ARM" value="Zephyr-ARM"/>
+                                        <label for="Zephyr-ARM">&nbsp;Zephyr-ARM</label><br/>
+                                        <input type="checkbox" id="QNX" name="QNX" value="QNX"/>
+                                        <label for="QNX">&nbsp;QNX</label>
+                                    </div>
+                                </div>                 
+                                <div style={{display: "flex", flexDirection: "row", marginTop: "8px", marginRight: "20px"}}>
+                                    <label htmlFor="components">Component:&nbsp;</label>
+                                    <div style={{paddingTop: "0px"}}>
+                                        <input type="checkbox" id="component1" name="component1" value="component1"/>
+                                        <label for="component1">&nbsp;Component 1</label><br/>
+                                        <input type="checkbox" id="component2" name="component2" value="component2"/>
+                                        <label for="component2">&nbsp;Component 2</label><br/>
+                                        <input type="checkbox" id="component3" name="component3" value="component3"/>
+                                        <label for="Zephyr-ARM">&nbsp;Component 3</label>
+                                    </div>
                                 </div>
-                                <div style={{marginRight: "5px", marginTop: "8px"}}>
-                                    <select name="functions" id="functions" style={{width: "300px"}}>
-                                        <option value="default">-- Run a specific function --</option>
-                                        <option value="function 1">function 1</option>
-                                        <option value="function 2">function 2</option>
-                                        <option value="function 3">function 3</option>
-                                    </select>
-                                </div>
-                                <div style={{textAlign: "center", marginRight: "6px"}}>
+                                
+                                <div style={{textAlign: "center", marginTop: "10px", marginRight: "6px", marginLeft: "6px"}}>
                                     <button className="btn btn-dark">
                                         Select
                                     </button>
@@ -65,28 +88,63 @@ export default function FilterBtn() {
                         {filter? 
                             (
                             <div style={{display: "flex", flexDirection: "column"}}>
-                                <div>
-                                    <div style={{marginRight: "5px", marginTop: "8px"}}>
-                                        <select name="components" id="components" style={{width: "300px"}}>
-                                            <option value="default">-- Run a specific API set --</option>
-                                            <option value="API set 1">API set 1</option>
-                                            <option value="API set 2">API set 2</option>
-                                            <option value="API set 3">API set 3</option>
-                                        </select>
+                                <div className={styles.filterBarCol}>
+                                    <div>
+                                        <div><label htmlFor="device">Device</label></div>
                                     </div>
-                                    <div style={{marginRight: "5px", marginTop: "8px"}}>
-                                        <select name="functions" id="functions" style={{width: "300px"}}>
-                                            <option value="default">-- Run a specific function --</option>
-                                            <option value="function 1">function 1</option>
-                                            <option value="function 2">function 2</option>
-                                            <option value="function 3">function 3</option>
-                                        </select>
+                                    <div>
+                                    <div>
+                                        :&nbsp;<input type="checkbox" id="V3M2" name="V3M2" value="V3M2"/>
+                                            <label for="V3M2">&nbsp;V3M2</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="V3H1" name="V3H1" value="V3H1"/>
+                                            <label for="V3H1">&nbsp;V3H1</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="V3H2" name="V3H2" value="V3H2"/>
+                                            <label for="V3H2">&nbsp;V3H2</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="V4H" name="V4H" value="V4H"/>
+                                            <label for="V4H">&nbsp;V4H</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="V4H2" name="V4H2" value="V4H2"/>
+                                            <label for="V4H2">&nbsp;V4H2</label>
+                                        </div>
                                     </div>
-                                    <div style={{textAlign: "center", marginTop: "6px"}}>
-                                        <button className="btn btn-dark">
-                                            Select
-                                        </button>
+                                </div>
+
+                                <div className={styles.filterBarCol}>
+                                    <div>
+                                        <div><label htmlFor="OS">OS</label></div>
                                     </div>
+                                    <div>
+                                    <div>
+                                        :&nbsp;<input type="checkbox" id="Linux-GCC" name="Linux-GCC" value="Linux-GCC"/>
+                                            <label for="Linux-GCC">&nbsp;Linux-GCC</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="Linux-ARM" name="Linux-ARM" value="Linux-ARM"/>
+                                            <label for="Linux-ARM">&nbsp;Linux-ARM</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="Zephyr-ARM" name="Zephyr-ARM" value="Zephyr-ARM"/>
+                                            <label for="Zephyr-ARM">&nbsp;Zephyr-ARM</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="QNX" name="QNX" value="QNX"/>
+                                            <label for="QNX">&nbsp;QNX</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className={styles.filterBarCol}>
+                                    <div>
+                                        <div><label htmlFor="components">Component</label></div>
+                                    </div>
+                                    <div>
+                                    <div>
+                                        :&nbsp;<input type="checkbox" id="component1" name="component1" value="component1"/>
+                                            <label for="component1">&nbsp;Component 1</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="component2" name="component2" value="component2"/>
+                                            <label for="component2">&nbsp;Component 2</label><br/>
+                                            &nbsp;&nbsp;<input type="checkbox" id="component3" name="component3" value="component3"/>
+                                            <label for="Zephyr-ARM">&nbsp;Component 3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{textAlign: "center", marginTop: "10px"}}>
+                                    <button className="btn btn-dark">
+                                        Select
+                                    </button>
                                 </div>
                                 <button className={styles.btnFilterUp} title="Filter target" onClick={handleCloseFilter}>
                                     <span><KeyboardDoubleArrowUpIcon /></span>

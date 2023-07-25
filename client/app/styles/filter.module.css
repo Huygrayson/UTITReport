@@ -81,3 +81,13 @@
         transform: translateY(-5px);
     }
 }
+
+.filterBarCol {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.filterBarCol div {
+    margin-top: 6px;
+}

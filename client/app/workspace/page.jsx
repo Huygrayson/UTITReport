@@ -1,7 +1,10 @@
+"use client"
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '../styles/workspace.module.css'
 import FilterBtn from './filter'
-import IT from "./IT";
+import Task from "./task";
+import Log from "./logs";
+import ITTemplate from "./IT_template";
 
 export default function Workspace() {
     return(
@@ -9,9 +12,18 @@ export default function Workspace() {
             <div className={styles.filterArea}>
                 <FilterBtn />
             </div>
-            <div className={styles.mainArea}>
-                <IT />
+            <div className={styles.layout}>
+                <div className={styles.mainArea}>
+                    <ITTemplate />
+                </div>
+                <div className={styles.taskArea}>
+                    <Task />
+                </div>
+                <div className={styles.logArea}>
+                    <Log />
+                </div>
             </div>
+
         </>
     )
 }

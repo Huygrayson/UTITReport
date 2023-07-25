@@ -16,6 +16,8 @@ export default function Navbar(){
             <div className={styles.settingsContent}>
                 <p>Vietnamese</p>
                 <p>Darkmode</p>
+                <p>Close project</p>
+                <p>About</p>
             </div>
         </div>
       )
