@@ -1,4 +1,5 @@
-import styles from '../styles/filter.module.css'
+"use client"
+import styles from './styles/filter.module.css'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
@@ -73,12 +74,12 @@ export default function FilterBtn() {
                                     </button>
                                 </div>
                                 
-                                <button className={styles.btnFilterLeft} title="Filter target" onClick={handleCloseFilter}>
+                                <button className={styles.btnFilterLeft} title="Filter view" onClick={handleCloseFilter}>
                                     <span><KeyboardDoubleArrowLeftIcon /></span>
                                 </button>
                             </div>
                             ):
-                            (<button className={styles.btnFilterRight} title="Filter target" onClick={handleOpenFilter}>
+                            (<button className={styles.btnFilterRight} title="Filter view" onClick={handleOpenFilter}>
                                 <span><KeyboardDoubleArrowRightIcon /></span>
                             </button>)
                         }
@@ -146,12 +147,12 @@ export default function FilterBtn() {
                                         Select
                                     </button>
                                 </div>
-                                <button className={styles.btnFilterUp} title="Filter target" onClick={handleCloseFilter}>
+                                <button className={styles.btnFilterUp} title="Filter view" onClick={handleCloseFilter}>
                                     <span><KeyboardDoubleArrowUpIcon /></span>
                                 </button>
                             </div>
                             ):
-                            (<button className={styles.btnFilterDown} title="Filter target" onClick={handleOpenFilter}>
+                            (<button className={styles.btnFilterDown} title="Filter view" onClick={handleOpenFilter}>
                                 <span><KeyboardDoubleArrowDownIcon /></span>
                             </button>)
                         }   

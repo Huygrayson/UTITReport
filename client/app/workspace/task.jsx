@@ -1,4 +1,5 @@
-import styles from '../styles/task.module.css'
+"use client"
+import styles from './styles/task.module.css'
 import Media from 'react-media';
 
 export default function Task() {

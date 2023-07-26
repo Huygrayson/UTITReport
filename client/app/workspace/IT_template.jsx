@@ -1,4 +1,4 @@
-import styles from '../styles/IT_template.module.css'
+import styles from './styles/IT_template.module.css'
 
 export default function ITTemplate() {
     return(

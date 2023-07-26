@@ -1,4 +1,5 @@
-import styles from '../styles/logs.module.css'
+"use client"
+import styles from './styles/logs.module.css'
 import { Box, Tab} from '@mui/material'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 import { useState } from 'react'

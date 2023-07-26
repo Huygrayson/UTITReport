@@ -1,6 +1,6 @@
 "use client"
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from '../styles/workspace.module.css'
+import styles from './styles/page.module.css'
 import FilterBtn from './filter'
 import Task from "./task";
 import Log from "./logs";
